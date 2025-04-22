@@ -1,0 +1,254 @@
+:root {
+  --primary-color: #4CAF50;
+  --primary-hover: #45a049;
+  --text-color: #333;
+  --text-light: #666;
+  --border-color: #ddd;
+  --background-color: #f5f5f5;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.login-container {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 420px;
+  margin: 2rem auto;
+  transition: var(--transition);
+}
+
+.login-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.login-container h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: var(--transition);
+  text-align: left;
+  margin-left: 0;
+}
+
+.form-group input {
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: var(--white);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.form-group input::placeholder {
+  color: var(--border-color);
+}
+
+/* Base Button Styles */
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Add some animation for the loading state */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+button:disabled {
+  animation: pulse 1.5s infinite;
+}
+
+/* Google Button Styles */
+.google-btn {
+  background-color: #ffffff;
+  color: #757575;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+}
+
+.google-btn:hover:not(:disabled) {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  color: #555555;
+  transform: translateY(-2px);
+}
+
+.google-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  color: #4285f4;
+}
+
+.google-btn-text {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* Add a subtle shadow to the Google button */
+.google-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(234, 67, 53, 0.1),
+    rgba(66, 133, 244, 0.1),
+    rgba(52, 168, 83, 0.1),
+    rgba(251, 188, 5, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.google-btn:hover::before {
+  opacity: 1;
+}
+
+/* Divider Styles */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-group input {
+    padding: 0.8rem;
+  }
+  
+  button {
+    padding: 0.8rem;
+  }
+
+  .google-btn {
+    padding: 10px 20px;
+  }
+  
+  .google-icon-wrapper {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+} 
