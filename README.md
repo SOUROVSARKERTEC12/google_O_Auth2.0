@@ -111,4 +111,19 @@ A full-stack application implementing Google OAuth 2.0 authentication with a Rea
 5. Open a Pull Request
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details. 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology. It is a simple license that permits reuse within proprietary software provided all copies of the licensed software include a copy of the MIT License terms and the copyright notice.
+
+### Key Features of MIT License:
+- Commercial use
+- Modification
+- Distribution
+- Private use
+- No liability
+- No warranty
+
+For more information about the MIT License, visit [opensource.org](https://opensource.org/licenses/MIT). 
