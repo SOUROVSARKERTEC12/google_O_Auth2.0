@@ -126,4 +126,24 @@ The MIT License is a permissive free software license originating at the Massach
 - No liability
 - No warranty
 
-For more information about the MIT License, visit [opensource.org](https://opensource.org/licenses/MIT). 
+For more information about the MIT License, visit [opensource.org](https://opensource.org/licenses/MIT).
+
+## Author Permissions
+
+### Important Notice
+This project is NOT open for public use. All rights are reserved by the author (SOUROVSARKERTEC12).
+
+### Usage Policy
+- ❌ This project cannot be used without explicit written permission from the author
+- ❌ No commercial or personal use is allowed without authorization
+- ❌ No modifications or distributions are permitted without consent
+- ❌ The code cannot be used as a learning resource without permission
+
+### How to Request Permission
+If you wish to use this project:
+- 📧 Contact the author directly for permission
+- 📝 Provide details about your intended use
+- ⏳ Wait for explicit written authorization
+
+### Copyright Notice
+All rights reserved. Unauthorized use, reproduction, or distribution of this project, or any portion of it, may result in severe civil and criminal penalties.
